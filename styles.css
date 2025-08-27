@@ -1,0 +1,230 @@
+/* === Google Fonts === */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+
+:root {
+  --primary: #6c63ff;
+  --secondary: #ff6584;
+  --bg: #0f172a;
+  --text: #e2e8f0;
+  --card-bg: rgba(255,255,255,0.05);
+  --radius: 12px;
+  --transition: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* NAVBAR */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(0,0,0,0.3);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+}
+
+.nav .logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--primary);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.nav-links a:hover {
+  color: var(--primary);
+}
+
+.cta {
+  padding: 0.4rem 1rem;
+  background: var(--primary);
+  border-radius: var(--radius);
+  color: white !important;
+}
+
+/* HERO SECTION */
+.hero {
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.hero-left {
+  max-width: 500px;
+}
+
+.hero-left h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-left span {
+  color: var(--primary);
+}
+
+.hero-tagline {
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.4rem;
+  border-radius: var(--radius);
+  text-decoration: none;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.btn.primary {
+  background: var(--primary);
+  color: white;
+}
+
+.btn.ghost {
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* PROJECTS */
+.projects {
+  padding: 3rem 2rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.proj {
+  background: var(--card-bg);
+  padding: 1rem;
+  border-radius: var(--radius);
+  transition: var(--transition);
+}
+
+.proj:hover {
+  transform: translateY(-5px);
+  background: rgba(255,255,255,0.1);
+}
+
+.proj img {
+  max-width: 100%;
+  border-radius: var(--radius);
+  margin-bottom: 0.8rem;
+}
+
+.tag {
+  display: inline-block;
+  background: var(--secondary);
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius);
+  font-size: 0.75rem;
+  color: white;
+}
+
+/* SKILLS */
+.skills {
+  padding: 3rem 2rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 1rem;
+}
+
+.skill h4 {
+  margin-bottom: 0.4rem;
+}
+
+.bar {
+  background: rgba(255,255,255,0.1);
+  height: 8px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-bottom: 0.4rem;
+}
+
+.bar span {
+  display: block;
+  height: 100%;
+  background: var(--primary);
+}
+
+/* EDUCATION & CONTACT */
+.section {
+  padding: 3rem 2rem;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+  gap: 2rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: var(--radius);
+  border: none;
+  margin-top: 0.3rem;
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.contact-card {
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+}
+
+.site-footer {
+  text-align: center;
+  padding: 1rem;
+  background: rgba(0,0,0,0.3);
+  margin-top: 2rem;
+}

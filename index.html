@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sathvika — Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+
+  <!-- custom cursor -->
+  <div id="cursor"></div>
+
+  <!-- Theme toggle -->
+  <button id="themeToggle" aria-label="Toggle theme">🌙</button>
+
+  <!-- NAV -->
+  <nav class="nav container" role="navigation">
+    <div class="brand">
+      <a href="#hero"><span class="logo">SK</span></a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a class="cta" href="resume.pdf" download>Resume</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Open menu" aria-expanded="false">☰</button>
+  </nav>
+
+  <!-- HERO -->
+  <header id="hero" class="hero">
+    <div class="hero-inner container">
+      <div class="hero-left">
+        <h1 class="headline">Hi — I’m <span>Sathvika</span>.<br><span class="sub">UX Architect • Front-end • AI &amp; ML</span></h1>
+        <p class="hero-tagline">I design human-centered interfaces and implement responsive front-ends that connect users with intelligent systems.</p>
+
+        <div class="hero-cta">
+          <a class="btn primary" href="#projects">See Work</a>
+          <a class="btn ghost" href="resume.pdf" download>Download CV</a>
+        </div>
+
+        <ul class="meta">
+          <li><strong>Email</strong><br><a href="mailto:sathvikakollabathula@gmail.com">sathvikakollabathula@gmail.com</a></li>
+          <li><strong>Location</strong><br>Hyderabad, India</li>
+          <li><strong>LinkedIn</strong><br><a href="https://www.linkedin.com/in/sathvika-kollabathula/" target="_blank" rel="noopener">sathvika.kollabathula</a></li>
+        </ul>
+      </div>
+
+      <div class="hero-right">
+        <div class="profile-wrap">
+          <div class="glow"></div>
+          <img src="images/profile.jpg" alt="Portrait of Sathvika" class="profile-img" />
+          <div class="profile-badges">
+            <span>Figma</span>
+            <span>HTML</span>
+            <span>JS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- animated blobs -->
+    <div class="blobs" aria-hidden="true">
+      <div class="blob b1"></div>
+      <div class="blob b2"></div>
+      <div class="blob b3"></div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ABOUT -->
+    <section id="about" class="container section about">
+      <div class="grid">
+        <div>
+          <h2>About Me</h2>
+          <p>I’m a final-year B.Tech (CSE — AI &amp; ML) student and UX enthusiast. I blend user research, prototyping and front-end engineering to build interfaces that are usable, accessible and delightful.</p>
+
+          <ul class="facts">
+            <li><strong>Education:</strong> Vidya Jyothi Institute of Technology — B.Tech (AI &amp; ML)</li>
+            <li><strong>CGPA:</strong> 8.39 (till 5th sem)</li>
+            <li><strong>Interests:</strong> Design systems, animation aesthetics, photography, dance</li>
+          </ul>
+
+          <div class="links-small">
+            <a class="link" href="#projects">Selected projects</a>
+            <a class="link" href="resume.pdf" download>Download resume</a>
+          </div>
+        </div>
+
+        <div class="quote-card">
+          <blockquote>
+            “I design interfaces that respect user attention and help people achieve goals faster.”
+          </blockquote>
+          <div class="small-meta">Skills: Figma • HTML • CSS • JavaScript • Flask</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="container section projects">
+      <h2>Selected Projects</h2>
+      <p class="muted">Hands-on projects combining CV, web, and UX design.</p>
+
+      <div class="projects-grid">
+        <article class="proj" data-gallery="crowd" tabindex="0">
+          <div class="proj-media">
+            <img src="images/project1-1.jpg" alt="Crowd Clearance screenshot">
+          </div>
+          <div class="proj-body">
+            <h3>Crowd Clearance & Queue Tracking</h3>
+            <p>OpenCV video analytics + Flask backend with virtual queuing and admin dashboard.</p>
+            <div class="proj-meta">
+              <span class="tag">Computer Vision</span>
+              <button class="link-btn" data-open="crowd">View</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="proj" data-gallery="breast" tabindex="0">
+          <div class="proj-media">
+            <img src="images/project2-1.jpg" alt="Breast cancer ML project">
+          </div>
+          <div class="proj-body">
+            <h3>ML Classifier Analysis — Breast Cancer</h3>
+            <p>Comparative analysis of DNN & Random Forest on FNA features with clinician-oriented UI.</p>
+            <div class="proj-meta">
+              <span class="tag">Machine Learning</span>
+              <button class="link-btn" data-open="breast">View</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="proj" data-gallery="ux" tabindex="0">
+          <div class="proj-media">
+            <img src="images/project3-1.jpg" alt="UX prototypes and dashboards">
+          </div>
+          <div class="proj-body">
+            <h3>UX Prototypes & Dashboards</h3>
+            <p>Research-driven wireframes and responsive UI components with accessible patterns.</p>
+            <div class="proj-meta">
+              <span class="tag">UX / Front-end</span>
+              <button class="link-btn" data-open="ux">View</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="container section skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <h4>Frontend</h4>
+          <div class="bar" data-value="90"><span></span></div>
+          <small class="muted">HTML • CSS • JS • Bootstrap • Tailwind</small>
+        </div>
+        <div class="skill">
+          <h4>Design</h4>
+          <div class="bar" data-value="85"><span></span></div>
+          <small class="muted">Figma • Prototyping • Usability Testing</small>
+        </div>
+        <div class="skill">
+          <h4>Machine Learning</h4>
+          <div class="bar" data-value="75"><span></span></div>
+          <small class="muted">Python • Scikit-learn • DNN basics</small>
+        </div>
+        <div class="skill">
+          <h4>Backend</h4>
+          <div class="bar" data-value="60"><span></span></div>
+          <small class="muted">Flask • API integration</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="container section education">
+      <h2>Education & Certificates</h2>
+      <div class="edu">
+        <div>
+          <h4>B.Tech — CSE (AI & ML)</h4>
+          <p>Vidya Jyothi Institute of Technology • CGPA: 8.39</p>
+        </div>
+        <div>
+          <h4>Certificates</h4>
+          <ul>
+            <li>Programming in Java — NPTEL</li>
+            <li>Database Programming with SQL — Oracle Academy</li>
+            <li>Programming Essentials in Python — Cisco</li>
+            <li>Technology in Job Simulation — Deloitte</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="container section contact">
+      <h2>Contact</h2>
+      <div class="grid">
+        <form id="contactForm" class="contact-form" action="#" novalidate>
+          <label><span>Your name</span><input name="name" required></label>
+          <label><span>Your email</span><input type="email" name="email" required></label>
+          <label><span>Message</span><textarea name="message" rows="5" required></textarea></label>
+          <div class="form-actions">
+            <button class="btn primary" type="submit">Send message</button>
+            <a class="btn ghost" href="mailto:sathvikakollabathula@gmail.com">Or email directly</a>
+          </div>
+        </form>
+
+        <aside class="contact-card">
+          <h3>Let's connect</h3>
+          <p><strong>Email:</strong> <a href="mailto:sathvikakollabathula@gmail.com">sathvikakollabathula@gmail.com</a></p>
+          <p><strong>Phone:</strong> <a href="tel:9951253355">9951253355</a></p>
+          <p><strong>Location:</strong> Hyderabad, India</p>
+          <a class="btn outline" href="resume.pdf" download>Download resume</a>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Sathvika Kollabathula — Designed & coded by me</p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="./script.js"></script>
+</body>
+</html>
